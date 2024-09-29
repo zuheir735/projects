@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<body>
+    <p> enter a number and click ok:</p>
+    <input id="id1" type="number" min="100"max="300" required>
+    <button onclick="myfunction()">ok</button>
+    <p>if the number is less than 100 or greater than 300, an error message will be displayed.</p>
+    <p id="result"></p>
+    <script>
+        function myfunction() {
+        var inpobj= document.getElementById("id1");
+        if(!inpobj.checkValidity()) {
+            document.getElementById("result").innerHTML=
+            inpobj.validationMessage;
+        } else {
+            document.getElementById("result").innerHTML="input ok";
+        }
+    }
+    </script>
+    </body>
+    </html>
+        
