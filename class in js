@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <h2> javascript class inheritance</h2>
+ 
+ <p id= "details"></p>
+<p id= "greetings"></p>
+<script>
+    class student{
+    Constructor(name) 
+    this.studentName= name;
+    }
+    static hello(){
+        return "hello";
+    }
+    present() {
+        return'my name is'+this.studentName;
+    }
+}
+
+
+
+
